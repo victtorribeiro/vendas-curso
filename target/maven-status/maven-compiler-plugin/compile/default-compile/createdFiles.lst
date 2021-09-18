@@ -1,1 +1,7 @@
 github\victtorribeiro\VendasApplication.class
+github\victtorribeiro\domain\repositorio\Clientes.class
+github\victtorribeiro\domain\repositorio\Clientes$1.class
+github\victtorribeiro\domain\entity\Cliente.class
+github\victtorribeiro\domain\entity\Produto.class
+github\victtorribeiro\domain\entity\Pedido.class
+github\victtorribeiro\domain\entity\ItemPedido.class

@@ -50,6 +50,7 @@ public class VendasApplication {
                 todosClientes.forEach(System.out::println);
 
             }
+            
         };
     }
 
