@@ -1,8 +1,15 @@
 package github.victtorribeiro.domain.entity;
 
+import javax.persistence.*;
+
+@Entity
 public class Cliente {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
+
+    @Column(length = 100)
     private String nome;
 
     public Cliente() {

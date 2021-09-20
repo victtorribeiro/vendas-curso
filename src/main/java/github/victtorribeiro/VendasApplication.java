@@ -36,12 +36,12 @@ public class VendasApplication {
             });
 
             System.out.println("Buscando Clientes");
-            clientes.buscarPorNome("Vict").forEach(System.out::println);
+            clientes.buscarPorNome("Raq").forEach(System.out::println);
 
-//            System.out.println("Deletando Clientes");
-//            clientes.obterTodos().forEach(c -> {
-//                clientes.deletar(c);
-//            });
+            System.out.println("Deletando Clientes");
+            clientes.obterTodos().forEach(c -> {
+                clientes.deletar(c);
+            });
 
             todosClientes = clientes.obterTodos();
             if (todosClientes.isEmpty()){
