@@ -2,6 +2,7 @@ package github.victtorribeiro.rest.controller;
 
 import github.victtorribeiro.domain.entity.Produto;
 import github.victtorribeiro.domain.repository.Produtos;
+import github.victtorribeiro.exception.RegraNegocioException;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
 import static org.springframework.http.HttpStatus.*;
@@ -32,7 +33,7 @@ public class ProdutoController {
 
         return repository
                 .findById(id)
-                .orElseThrow( () -> new ResponseStatusException(NOT_FOUND, "Produto não encontrado"));
+                .orElseThrow( () -> new RegraNegocioException("Produto não encontrado " + id));
     }
 
     @DeleteMapping("{id}")
@@ -43,7 +44,7 @@ public class ProdutoController {
                     repository.delete(p);
                     return p;
                 })
-                .orElseThrow( () -> new ResponseStatusException(NOT_FOUND, "Produto não encontrado"));
+                .orElseThrow( () -> new RegraNegocioException("Produto não encontrado " + id));
     }
 
     @PutMapping("{id}")
@@ -56,7 +57,7 @@ public class ProdutoController {
                     repository.save(produto);
                     return p;
                 })
-                .orElseThrow( () -> new ResponseStatusException(NOT_FOUND, "Produto não encontrado"));
+                .orElseThrow( () -> new RegraNegocioException("Produto não encontrado " + id));
 
     }
     @GetMapping
