@@ -16,11 +16,11 @@ public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    @NotEmpty(message = "Campo Descrição é obriagatório.")
+    @NotEmpty(message = "{campo.descricao.obrigatorio}")
     private String descricao;
 
     @Column(name = "preco_unitario")
-    @NotNull(message = "Campo Preço é obrigatório")
+    @NotNull(message = "{campo.preco.obrigatorio}")
     private BigDecimal preco;
 
 
