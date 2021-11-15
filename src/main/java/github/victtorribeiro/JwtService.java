@@ -33,10 +33,7 @@ public class JwtService {
                 .setExpiration(data)
                 .signWith( SignatureAlgorithm.HS512, chaveAssinatura )
                 .compact();
-<<<<<<< HEAD
 
-=======
->>>>>>> b95cefb8d1e81c07ce591775b9f61a93fad711b9
     }
 
     public static void main(String[] args) {
