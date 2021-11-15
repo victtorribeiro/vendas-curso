@@ -68,7 +68,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+<<<<<<< HEAD
                 <version>2.3.4.RELEASE</version>
+=======
+>>>>>>> b95cefb8d1e81c07ce591775b9f61a93fad711b9
             </plugin>
         </plugins>
     </build>

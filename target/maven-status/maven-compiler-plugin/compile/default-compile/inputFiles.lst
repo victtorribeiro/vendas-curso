@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Victor\Documents\Projetos\vendas-curso-master\src\main\java\github\victtorribeiro\service\PedidoService.java
 C:\Users\Victor\Documents\Projetos\vendas-curso-master\src\main\java\github\victtorribeiro\rest\dto\ItemPedidoDTO.java
 C:\Users\Victor\Documents\Projetos\vendas-curso-master\src\main\java\github\victtorribeiro\config\SecurityConfig.java
@@ -31,3 +32,29 @@ C:\Users\Victor\Documents\Projetos\vendas-curso-master\src\main\java\github\vict
 C:\Users\Victor\Documents\Projetos\vendas-curso-master\src\main\java\github\victtorribeiro\exception\RegraNegocioException.java
 C:\Users\Victor\Documents\Projetos\vendas-curso-master\src\main\java\github\victtorribeiro\config\InternacionalizacaoConfig.java
 C:\Users\Victor\Documents\Projetos\vendas-curso-master\src\main\java\github\victtorribeiro\rest\controller\ApplicationControllerAdvice.java
+=======
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\domain\entity\Pedido.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\rest\ApiErrors.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\rest\controller\ClienteController.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\rest\dto\InformacoesPedidoDTO.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\rest\dto\AtualizacaoStatusPedidoDTO.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\domain\entity\Produto.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\rest\controller\ApplicationControllerAdvice.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\rest\controller\ProdutoController.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\domain\enums\StatusPedido.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\domain\repository\Pedidos.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\rest\controller\PedidoController.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\exception\RegraNegocioException.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\rest\dto\InformacaoItemPedidoDTO.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\VendasApplication.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\exception\PedidoNaoEncontradoException.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\rest\dto\PedidoDTO.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\domain\entity\ItemPedido.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\service\impl\PedidoServiceImpl.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\domain\repository\Clientes.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\domain\repository\ItensPedido.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\rest\dto\ItemPedidoDTO.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\domain\entity\Cliente.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\domain\repository\Produtos.java
+C:\Users\Victor\Documents\java_projects\vendas\src\main\java\github\victtorribeiro\service\PedidoService.java
+>>>>>>> b95cefb8d1e81c07ce591775b9f61a93fad711b9
