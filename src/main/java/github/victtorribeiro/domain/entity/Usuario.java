@@ -16,7 +16,7 @@ import javax.validation.constraints.NotEmpty;
 @Data
 public class Usuario {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @NotEmpty(message = "{campo.login.obrigatorio}")
     private String login;

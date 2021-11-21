@@ -1,6 +1,9 @@
-package github.victtorribeiro;
+package github.victtorribeiro.security.jwt;
 
+import github.victtorribeiro.VendasApplication;
 import github.victtorribeiro.domain.entity.Usuario;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Value;
@@ -36,6 +39,30 @@ public class JwtService {
 
     }
 
+    private Claims obterClaims( String token ) throws ExpiredJwtException {
+        return Jwts
+                .parser()
+                .setSigningKey(chaveAssinatura)
+                .parseClaimsJws(token)
+                .getBody();
+
+    }
+
+    public Boolean tokenValido(String token) {
+        try {
+            Claims claims = obterClaims(token);
+            Date dataExpiracao = claims.getExpiration();
+            LocalDateTime data = dataExpiracao.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+            return !LocalDateTime.now().isAfter(data);
+        }catch (Exception e){
+            return false;
+        }
+    }
+
+    public String obterLoginUsuario (String token) throws ExpiredJwtException{
+        return (String) obterClaims(token).getSubject();
+    }
+
     public static void main(String[] args) {
         ConfigurableApplicationContext contexto = SpringApplication.run(VendasApplication.class);
         JwtService service = contexto.getBean(JwtService.class);
@@ -43,6 +70,10 @@ public class JwtService {
         String token = service.gerarToken(usuario);
         System.out.println(token);
 
+        Boolean isTokenValido = service.tokenValido(token);
+        System.out.println(isTokenValido);
+
+        System.out.println(service.obterLoginUsuario(token));
     }
 
 }
