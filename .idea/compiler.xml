@@ -8,11 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="vendas-curso-master" />
+        <module name="vendas-curso" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="vendas-curso" options="-parameters" />
       <module name="vendas-curso-master" options="-parameters" />
     </option>
   </component>
